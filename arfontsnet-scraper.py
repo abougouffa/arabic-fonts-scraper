@@ -21,8 +21,6 @@ IMG_DL.encode("utf-8")
 first_page = get(BASE.format(""))
 first_page.encoding = "utf-8"
 
-# print(first_page.text)
-
 first_page = Soup(first_page.text, features="lxml")
 
 sidebar = first_page.find("nav", id="mySidebar")
